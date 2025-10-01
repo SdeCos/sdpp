@@ -12,9 +12,14 @@ namespace Herencia
         public DateTime FechaNacimiento { get; set; }
         public string DNI { get; set; }
 
+        public Persona (string Elnombre)
+        {
+            this.Nombre = Elnombre;
+        }
+
         public void ComunicarIncidencia(string ExplicacionIncidencia)
         {
-            Console.WriteLine("Comunicar incidencia desde Persona:" + this.Nombre + ". Explicacion " + ExplicacionIncidencia);
+            Console.WriteLine($"Comunicar incidencia desde Persona: {this.Nombre}. Explicacion {ExplicacionIncidencia}");
         }
     }
 }
