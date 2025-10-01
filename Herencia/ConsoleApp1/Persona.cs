@@ -21,5 +21,10 @@ namespace Herencia
         {
             Console.WriteLine($"Comunicar incidencia desde Persona: {this.Nombre}. Explicacion {ExplicacionIncidencia}");
         }
+
+        override public string ToString()
+        {
+            return this.Nombre;
+        }
     }
 }
