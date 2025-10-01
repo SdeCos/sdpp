@@ -17,7 +17,7 @@ namespace Herencia
             this.Nombre = Elnombre;
         }
 
-        public void ComunicarIncidencia(string ExplicacionIncidencia)
+        public virtual void ComunicarIncidencia(string ExplicacionIncidencia)
         {
             Console.WriteLine($"Comunicar incidencia desde Persona: {this.Nombre}. Explicacion {ExplicacionIncidencia}");
         }
