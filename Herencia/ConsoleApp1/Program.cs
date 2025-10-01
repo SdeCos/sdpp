@@ -16,6 +16,12 @@
             Console.WriteLine($"Empleado {empleado.Nombre}, Id {empleado.IdEmpleado}");
             empleado.ComunicarIncidencia("Estoy enfermo");
             Console.WriteLine(empleado.ToString());
+
+            Persona empleado2 = empleado;
+            empleado2.ComunicarIncidencia("Esoty enfermo otra vez.");
+
+            object objEmpleado = empleado;
+            Console.WriteLine(objEmpleado.ToString());
         }
     }
 }

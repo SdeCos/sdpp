@@ -16,6 +16,7 @@ namespace Herencia
         public override void ComunicarIncidencia(string ExplicacionIncidencia)
         {
             base.ComunicarIncidencia(ExplicacionIncidencia);
+            Console.WriteLine($"Comunicar incidencia desde Empleado: {this.Nombre}. Explicacion {ExplicacionIncidencia}");
             Console.WriteLine("Avisar RRHH");
         }
     }
