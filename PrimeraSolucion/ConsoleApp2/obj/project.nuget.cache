@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "5ioFzzsnD98=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\saul.decossanchez\\source\\repos\\PrimeraSolucion\\ConsoleApp2\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto ClassLibrary1 no es compatible con net6.0 (.NETCoreApp,Version=v6.0). El proyecto ClassLibrary1 admite: net7.0 (.NETCoreApp,Version=v7.0)",
+      "projectPath": "C:\\Users\\saul.decossanchez\\source\\repos\\PrimeraSolucion\\ConsoleApp2\\ConsoleApp1.csproj",
+      "filePath": "C:\\Users\\saul.decossanchez\\source\\repos\\PrimeraSolucion\\ConsoleApp2\\ConsoleApp1.csproj",
+      "libraryId": "ClassLibrary1",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
