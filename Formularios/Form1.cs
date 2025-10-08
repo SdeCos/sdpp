@@ -44,5 +44,10 @@ namespace Formularios
         {
 
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            MessageBox.Show("Se esta cerrando el formulario", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

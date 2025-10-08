@@ -74,7 +74,7 @@
             // 
             // btDividir
             // 
-            btDividir.Location = new Point(37, 68);
+            btDividir.Location = new Point(104, 65);
             btDividir.Name = "btDividir";
             btDividir.Size = new Size(75, 23);
             btDividir.TabIndex = 5;
@@ -94,6 +94,7 @@
             Controls.Add(btCrearFormulario);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)numOperando2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numOperando1).EndInit();
