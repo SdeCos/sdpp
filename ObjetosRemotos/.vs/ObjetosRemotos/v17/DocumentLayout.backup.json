@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5170152D-3327-4C0F-BD91-EFBED9B9BCC3}|Cliente\\Cliente.csproj|C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\cliente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5170152D-3327-4C0F-BD91-EFBED9B9BCC3}|Cliente\\Cliente.csproj|c:\\users\\saul.decossanchez\\source\\repos\\sdpp\\objetosremotos\\cliente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5170152D-3327-4C0F-BD91-EFBED9B9BCC3}|Cliente\\Cliente.csproj|solutionrelative:cliente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B364529A-93FA-42C0-B55B-EE1B585FB342}|Servidor\\Servidor.csproj|c:\\users\\saul.decossanchez\\source\\repos\\sdpp\\objetosremotos\\servidor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B364529A-93FA-42C0-B55B-EE1B585FB342}|Servidor\\Servidor.csproj|solutionrelative:servidor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B2933E6-FFD4-4E7D-AF81-B273D188AF3F}|BibliotecaClases\\BibliotecaClases.csproj|C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\bibliotecaclases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2933E6-FFD4-4E7D-AF81-B273D188AF3F}|BibliotecaClases\\BibliotecaClases.csproj|solutionrelative:bibliotecaclases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B2933E6-FFD4-4E7D-AF81-B273D188AF3F}|BibliotecaClases\\BibliotecaClases.csproj|c:\\users\\saul.decossanchez\\source\\repos\\sdpp\\objetosremotos\\bibliotecaclases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2933E6-FFD4-4E7D-AF81-B273D188AF3F}|BibliotecaClases\\BibliotecaClases.csproj|solutionrelative:bibliotecaclases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B364529A-93FA-42C0-B55B-EE1B585FB342}|Servidor\\Servidor.csproj|C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\servidor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B364529A-93FA-42C0-B55B-EE1B585FB342}|Servidor\\Servidor.csproj|solutionrelative:servidor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,19 +25,6 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\BibliotecaClases\\Class1.cs",
-              "RelativeDocumentMoniker": "BibliotecaClases\\Class1.cs",
-              "ToolTip": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\BibliotecaClases\\Class1.cs",
-              "RelativeToolTip": "BibliotecaClases\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T07:55:33.473Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
@@ -48,12 +35,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\BibliotecaClases\\Class1.cs",
+              "RelativeDocumentMoniker": "BibliotecaClases\\Class1.cs",
+              "ToolTip": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\BibliotecaClases\\Class1.cs",
+              "RelativeToolTip": "BibliotecaClases\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T07:55:33.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\Servidor\\Program.cs",
               "RelativeDocumentMoniker": "Servidor\\Program.cs",
               "ToolTip": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\Servidor\\Program.cs",
               "RelativeToolTip": "Servidor\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA2wCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T07:43:46.901Z",
               "EditorCaption": ""
@@ -66,7 +66,7 @@
               "RelativeDocumentMoniker": "Cliente\\Program.cs",
               "ToolTip": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\Cliente\\Program.cs",
               "RelativeToolTip": "Cliente\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T07:43:45.588Z",
               "EditorCaption": ""

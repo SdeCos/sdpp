@@ -5,7 +5,6 @@ using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
 using System.Text;
 using System.Threading.Tasks;
-using Servidor;
 using BibliotecaClases;
 
 namespace Cliente

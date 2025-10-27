@@ -56,10 +56,6 @@
       <Project>{5b2933e6-ffd4-4e7d-af81-b273d188af3f}</Project>
       <Name>BibliotecaClases</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Servidor\Servidor.csproj">
-      <Project>{b364529a-93fa-42c0-b55b-ee1b585fb342}</Project>
-      <Name>Servidor</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

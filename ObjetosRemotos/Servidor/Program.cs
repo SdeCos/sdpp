@@ -28,7 +28,16 @@ namespace Servidor
             System.Console.WriteLine("Press ENTER to quitnn");
             System.Console.ReadLine();
         }
-
+        public class MovieTicket : MarshalByRefObject, MovieTicketInterface
+        {
+            public string GetTicketStatus(string stringToPrint)
+            {
+                string returnStatus = "Ticket Confirmed";
+                Console.WriteLine("Enquiry for {0}", stringToPrint);
+                Console.WriteLine("Sending back status: {0}", returnStatus);
+                return returnStatus;
+            }
+        }
 
     }
 }
