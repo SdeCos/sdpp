@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\PrimerSistemaDistribuido\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7920CEF3-9712-4B24-9FF4-010FC7729FF6}|Servidor\\Servidor.csproj|c:\\users\\saul.decossanchez\\source\\repos\\sdpp\\primersistemadistribuido\\servidor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7920CEF3-9712-4B24-9FF4-010FC7729FF6}|Servidor\\Servidor.csproj|solutionrelative:servidor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF82D7A1-930C-4564-972C-5559511908E1}|Cliente\\Cliente.csproj|c:\\users\\saul.decossanchez\\source\\repos\\sdpp\\primersistemadistribuido\\cliente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF82D7A1-930C-4564-972C-5559511908E1}|Cliente\\Cliente.csproj|solutionrelative:cliente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7920CEF3-9712-4B24-9FF4-010FC7729FF6}|Servidor\\Servidor.csproj|c:\\users\\saul.decossanchez\\source\\repos\\sdpp\\primersistemadistribuido\\servidor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7920CEF3-9712-4B24-9FF4-010FC7729FF6}|Servidor\\Servidor.csproj|solutionrelative:servidor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,26 +30,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\PrimerSistemaDistribuido\\Servidor\\Program.cs",
               "RelativeDocumentMoniker": "Servidor\\Program.cs",
               "ToolTip": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\PrimerSistemaDistribuido\\Servidor\\Program.cs",
               "RelativeToolTip": "Servidor\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCIAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T06:20:02.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\PrimerSistemaDistribuido\\Cliente\\Program.cs",
               "RelativeDocumentMoniker": "Cliente\\Program.cs",
               "ToolTip": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\PrimerSistemaDistribuido\\Cliente\\Program.cs",
               "RelativeToolTip": "Cliente\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T06:21:18.499Z",
               "EditorCaption": ""
