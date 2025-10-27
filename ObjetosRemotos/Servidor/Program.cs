@@ -22,10 +22,10 @@ namespace Servidor
             TcpChannel tcpChannel = new TcpChannel(9998);
             ChannelServices.RegisterChannel(tcpChannel);
             Type commonInterfaceType = typeof(MovieTicket);
-            //Type commonInterfaceType = Type.GetType("MovieTicket");
+            //manera alternativa de hacer la linea de arriba -> Type commonInterfaceType = Type.GetType("MovieTicket");
             RemotingConfiguration.RegisterWellKnownServiceType(commonInterfaceType,
             "MovieTicketBooking", WellKnownObjectMode.SingleCall);
-            System.Console.WriteLine("Press ENTER to quitnn");
+            System.Console.WriteLine("Press ENTER to quit");
             System.Console.ReadLine();
         }
         public class MovieTicket : MarshalByRefObject, MovieTicketInterface

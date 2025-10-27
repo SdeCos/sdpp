@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{5170152D-3327-4C0F-BD91-EFBED9B9BCC3}|Cliente\\Cliente.csproj|solutionrelative:cliente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B2933E6-FFD4-4E7D-AF81-B273D188AF3F}|BibliotecaClases\\BibliotecaClases.csproj|C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\bibliotecaclases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2933E6-FFD4-4E7D-AF81-B273D188AF3F}|BibliotecaClases\\BibliotecaClases.csproj|solutionrelative:bibliotecaclases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B364529A-93FA-42C0-B55B-EE1B585FB342}|Servidor\\Servidor.csproj|C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\servidor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B364529A-93FA-42C0-B55B-EE1B585FB342}|Servidor\\Servidor.csproj|solutionrelative:servidor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2933E6-FFD4-4E7D-AF81-B273D188AF3F}|BibliotecaClases\\BibliotecaClases.csproj|C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\bibliotecaclases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2933E6-FFD4-4E7D-AF81-B273D188AF3F}|BibliotecaClases\\BibliotecaClases.csproj|solutionrelative:bibliotecaclases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\BibliotecaClases\\Class1.cs",
               "RelativeDocumentMoniker": "BibliotecaClases\\Class1.cs",
@@ -47,13 +47,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\Servidor\\Program.cs",
               "RelativeDocumentMoniker": "Servidor\\Program.cs",
               "ToolTip": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\Servidor\\Program.cs",
               "RelativeToolTip": "Servidor\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA2wCcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAiwBgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T07:43:46.901Z",
               "EditorCaption": ""
@@ -66,7 +66,7 @@
               "RelativeDocumentMoniker": "Cliente\\Program.cs",
               "ToolTip": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ObjetosRemotos\\Cliente\\Program.cs",
               "RelativeToolTip": "Cliente\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAYAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T07:43:45.588Z",
               "EditorCaption": ""
