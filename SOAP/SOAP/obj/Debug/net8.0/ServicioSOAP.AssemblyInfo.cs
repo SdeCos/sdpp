@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServicioSOAP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2a54720ad1b1a55697f03b6cc8fa823156ff1a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c63a343b1204bc8a611e0fb44fe7d07d79fd6f35")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServicioSOAP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServicioSOAP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
