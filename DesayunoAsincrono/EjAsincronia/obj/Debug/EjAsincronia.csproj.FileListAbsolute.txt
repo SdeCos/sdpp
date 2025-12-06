@@ -1,0 +1,23 @@
+C:\DesarrolloOnLine\Prototipos\EjAsincronia\EjAsincronia\obj\Debug\EjAsincronia.csprojAssemblyReference.cache
+C:\DesarrolloOnLine\Prototipos\EjAsincronia\EjAsincronia\obj\Debug\EjAsincronia.csproj.CoreCompileInputs.cache
+C:\DesarrolloOnLine\Prototipos\EjAsincronia\EjAsincronia\bin\Debug\EjAsincronia.exe.config
+C:\DesarrolloOnLine\Prototipos\EjAsincronia\EjAsincronia\bin\Debug\EjAsincronia.exe
+C:\DesarrolloOnLine\Prototipos\EjAsincronia\EjAsincronia\bin\Debug\EjAsincronia.pdb
+C:\DesarrolloOnLine\Prototipos\EjAsincronia\EjAsincronia\obj\Debug\EjAsincronia.exe
+C:\DesarrolloOnLine\Prototipos\EjAsincronia\EjAsincronia\obj\Debug\EjAsincronia.pdb
+C:\Users\danie\Desktop\Desayuno Asincrono\Desayuno Asincrono\EjAsincronia\bin\Debug\EjAsincronia.exe.config
+C:\Users\danie\Desktop\Desayuno Asincrono\Desayuno Asincrono\EjAsincronia\bin\Debug\EjAsincronia.exe
+C:\Users\danie\Desktop\Desayuno Asincrono\Desayuno Asincrono\EjAsincronia\bin\Debug\EjAsincronia.pdb
+C:\Users\danie\Desktop\Desayuno Asincrono\Desayuno Asincrono\EjAsincronia\obj\Debug\EjAsincronia.csproj.AssemblyReference.cache
+C:\Users\danie\Desktop\Desayuno Asincrono\Desayuno Asincrono\EjAsincronia\obj\Debug\EjAsincronia.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\Desayuno Asincrono\Desayuno Asincrono\EjAsincronia\obj\Debug\EjAsincronia.exe
+C:\Users\danie\Desktop\Desayuno Asincrono\Desayuno Asincrono\EjAsincronia\obj\Debug\EjAsincronia.pdb
+C:\Users\danie\Desktop\Desayuno Asincrono\Desayuno Asincrono\EjAsincronia\obj\Debug\EjAsincronia.exe.config
+C:\Users\saul.decossanchez\source\repos\sdpp\Desayuno Asincrono\EjAsincronia\bin\Debug\EjAsincronia.exe.config
+C:\Users\saul.decossanchez\source\repos\sdpp\Desayuno Asincrono\EjAsincronia\bin\Debug\EjAsincronia.exe
+C:\Users\saul.decossanchez\source\repos\sdpp\Desayuno Asincrono\EjAsincronia\bin\Debug\EjAsincronia.pdb
+C:\Users\saul.decossanchez\source\repos\sdpp\Desayuno Asincrono\EjAsincronia\obj\Debug\EjAsincronia.csproj.AssemblyReference.cache
+C:\Users\saul.decossanchez\source\repos\sdpp\Desayuno Asincrono\EjAsincronia\obj\Debug\EjAsincronia.exe.config
+C:\Users\saul.decossanchez\source\repos\sdpp\Desayuno Asincrono\EjAsincronia\obj\Debug\EjAsincronia.csproj.CoreCompileInputs.cache
+C:\Users\saul.decossanchez\source\repos\sdpp\Desayuno Asincrono\EjAsincronia\obj\Debug\EjAsincronia.exe
+C:\Users\saul.decossanchez\source\repos\sdpp\Desayuno Asincrono\EjAsincronia\obj\Debug\EjAsincronia.pdb

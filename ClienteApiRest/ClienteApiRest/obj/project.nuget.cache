@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9JpNpb9ghPI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\saul.decossanchez\\source\\repos\\sdpp\\ClienteApiRest\\ClienteApiRest\\ClienteApiRest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\saul.decossanchez\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
