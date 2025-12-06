@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sauls\\source\\repos\\proyecto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E76B354-BA2E-462B-BCD7-2DA3F85B841A}|ServerAPI\\ServerAPI.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\serverapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E76B354-BA2E-462B-BCD7-2DA3F85B841A}|ServerAPI\\ServerAPI.csproj|solutionrelative:serverapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E76B354-BA2E-462B-BCD7-2DA3F85B841A}|ServerAPI\\ServerAPI.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\serverapi\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E76B354-BA2E-462B-BCD7-2DA3F85B841A}|ServerAPI\\ServerAPI.csproj|solutionrelative:serverapi\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FilesController.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\ServerAPI\\Controllers\\FilesController.cs",
+              "RelativeDocumentMoniker": "ServerAPI\\Controllers\\FilesController.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\ServerAPI\\Controllers\\FilesController.cs",
+              "RelativeToolTip": "ServerAPI\\Controllers\\FilesController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAQwKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T07:37:38.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\ServerAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ServerAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\ServerAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ServerAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T07:36:46.026Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

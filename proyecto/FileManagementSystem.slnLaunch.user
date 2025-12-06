@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "FileManagementApi\\FileManagementApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "FileManagementClient\\FileManagementClient.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,306 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sauls\\source\\repos\\proyecto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementclient\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|solutionrelative:filemanagementclient\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementclient\\models\\filemetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|solutionrelative:filemanagementclient\\models\\filemetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|solutionrelative:filemanagementapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|solutionrelative:filemanagementapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementapi\\models\\filemetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|solutionrelative:filemanagementapi\\models\\filemetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|solutionrelative:filemanagementapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|solutionrelative:filemanagementapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|solutionrelative:filemanagementapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementapi\\filemanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|solutionrelative:filemanagementapi\\filemanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|solutionrelative:filemanagementclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementclient\\filemanagementclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|solutionrelative:filemanagementclient\\filemanagementclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementapi\\test.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|solutionrelative:filemanagementapi\\test.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementapi\\build_log.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|solutionrelative:filemanagementapi\\build_log.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementapi\\filemanagementapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|solutionrelative:filemanagementapi\\filemanagementapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C95A2B-8E69-44D7-A4AF-CC0BD52030BC}|FileManagementApi\\FileManagementApi.csproj|solutionrelative:filemanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|C:\\Users\\sauls\\source\\repos\\proyecto\\filemanagementclient\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|solutionrelative:filemanagementclient\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|c:\\users\\sauls\\source\\repos\\proyecto\\filemanagementclient\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBD2D91-4ADA-4943-A0F6-7E1DCC49DAE8}|FileManagementClient\\FileManagementClient.csproj|solutionrelative:filemanagementclient\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "FileManagementApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "FileManagementApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T18:24:37.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FileManagementApi.csproj",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\FileManagementApi.csproj",
+              "RelativeDocumentMoniker": "FileManagementApi\\FileManagementApi.csproj",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\FileManagementApi.csproj",
+              "RelativeToolTip": "FileManagementApi\\FileManagementApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-03T09:07:11.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "FileManagementApi\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "FileManagementApi\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:29:35.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "FileManagementClient\\Services\\ApiClient.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\Services\\ApiClient.cs",
+              "RelativeToolTip": "FileManagementClient\\Services\\ApiClient.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwA4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T09:05:07.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FileManagementClient.csproj",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\FileManagementClient.csproj",
+              "RelativeDocumentMoniker": "FileManagementClient\\FileManagementClient.csproj",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\FileManagementClient.csproj",
+              "RelativeToolTip": "FileManagementClient\\FileManagementClient.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-03T09:05:03.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "test.txt",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\test.txt",
+              "RelativeDocumentMoniker": "FileManagementApi\\test.txt",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\test.txt",
+              "RelativeToolTip": "FileManagementApi\\test.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-03T08:50:17.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FileManagementApi.http",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\FileManagementApi.http",
+              "RelativeDocumentMoniker": "FileManagementApi\\FileManagementApi.http",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\FileManagementApi.http",
+              "RelativeToolTip": "FileManagementApi\\FileManagementApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-12-02T10:27:12.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "FileManagementApi\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Services\\AuthService.cs",
+              "RelativeToolTip": "FileManagementApi\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:29:56.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "FileManagementApi\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Models\\User.cs",
+              "RelativeToolTip": "FileManagementApi\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:29:27.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileMetadata.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Models\\FileMetadata.cs",
+              "RelativeDocumentMoniker": "FileManagementApi\\Models\\FileMetadata.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Models\\FileMetadata.cs",
+              "RelativeToolTip": "FileManagementApi\\Models\\FileMetadata.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:29:23.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Program.cs",
+              "RelativeDocumentMoniker": "FileManagementApi\\Program.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Program.cs",
+              "RelativeToolTip": "FileManagementApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:50:19.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\LoginForm.cs",
+              "RelativeDocumentMoniker": "FileManagementClient\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\LoginForm.cs [Design]",
+              "RelativeToolTip": "FileManagementClient\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:48:05.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileMetadata.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\Models\\FileMetadata.cs",
+              "RelativeDocumentMoniker": "FileManagementClient\\Models\\FileMetadata.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\Models\\FileMetadata.cs",
+              "RelativeToolTip": "FileManagementClient\\Models\\FileMetadata.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:47:53.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "FileManagementApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "FileManagementApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T07:36:09.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\Program.cs",
+              "RelativeDocumentMoniker": "FileManagementClient\\Program.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\Program.cs",
+              "RelativeToolTip": "FileManagementClient\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:48:02.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\LoginForm.cs",
+              "RelativeDocumentMoniker": "FileManagementClient\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementClient\\LoginForm.cs",
+              "RelativeToolTip": "FileManagementClient\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:47:57.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "build_log.txt",
+              "DocumentMoniker": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\build_log.txt",
+              "RelativeDocumentMoniker": "FileManagementApi\\build_log.txt",
+              "ToolTip": "C:\\Users\\sauls\\source\\repos\\proyecto\\FileManagementApi\\build_log.txt",
+              "RelativeToolTip": "FileManagementApi\\build_log.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-02T10:27:49.984Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
