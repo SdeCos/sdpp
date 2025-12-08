@@ -122,12 +122,12 @@ namespace FileManagementApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> List([FromQuery] int? parentId)
+        public async Task<IActionResult> List([FromQuery] int? parentId, [FromQuery] bool starredOnly = false)
         {
             try
             {
                 var userId = GetUserId();
-                var files = await _fileService.ListFilesAsync(parentId, userId);
+                var files = await _fileService.ListFilesAsync(parentId, userId, starredOnly);
                 return Ok(files);
             }
             catch (UnauthorizedAccessException)
@@ -156,6 +156,61 @@ namespace FileManagementApi.Controllers
             catch (UnauthorizedAccessException)
             {
                 return Unauthorized();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        [HttpPost("{id}/star")]
+        public async Task<IActionResult> ToggleStar(int id)
+        {
+            try
+            {
+                var result = await _fileService.ToggleFileStarAsync(id);
+                if (!result)
+                {
+                    return NotFound("File not found.");
+                }
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        [HttpPost("{id}/share")]
+        public async Task<IActionResult> ShareFile(int id, [FromForm] string username)
+        {
+            try
+            {
+                var userId = GetUserId();
+                 // if username is empty check query or body? usually FromForm is fine for post
+                if(string.IsNullOrWhiteSpace(username)) return BadRequest("Username is required");
+
+                var result = await _fileService.ShareFileAsync(id, username, userId);
+                if (!result)
+                {
+                    return BadRequest("Could not share file. User not found or you don't own the file.");
+                }
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        [HttpGet("shared")]
+        public async Task<IActionResult> GetSharedFiles()
+        {
+            try
+            {
+                var userId = GetUserId();
+                var files = await _fileService.ListSharedFilesAsync(userId);
+                return Ok(files);
             }
             catch (Exception ex)
             {

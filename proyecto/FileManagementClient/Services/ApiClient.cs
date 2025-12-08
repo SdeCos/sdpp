@@ -32,14 +32,27 @@ namespace FileManagementClient.Services
             }
         }
 
-        public async Task<List<FileMetadata>> GetFilesAsync(int? parentId = null)
+        public async Task<List<FileMetadata>> GetFilesAsync(int? parentId = null, bool starredOnly = false)
         {
             AddAuthHeader();
             var url = _baseUrl;
+            var queryParams = new List<string>();
+
             if (parentId.HasValue)
             {
-                url += $"?parentId={parentId.Value}";
+                queryParams.Add($"parentId={parentId.Value}");
             }
+
+            if (starredOnly)
+            {
+                queryParams.Add("starredOnly=true");
+            }
+
+            if (queryParams.Count > 0)
+            {
+                url += "?" + string.Join("&", queryParams);
+            }
+
             var response = await _httpClient.GetAsync(url);
             response.EnsureSuccessStatusCode();
             var content = await response.Content.ReadAsStringAsync();
@@ -101,11 +114,37 @@ namespace FileManagementClient.Services
             return await response.Content.ReadAsStreamAsync();
         }
 
+        public async Task ToggleFileStarAsync(int id)
+        {
+            var response = await _httpClient.PostAsync($"{_baseUrl}/{id}/star", null);
+            response.EnsureSuccessStatusCode();
+        }
+
         public async Task DeleteFileAsync(int id)
         {
             AddAuthHeader();
             var response = await _httpClient.DeleteAsync($"{_baseUrl}/{id}");
             response.EnsureSuccessStatusCode();
+        }
+
+        public async Task ShareFileAsync(int id, string username)
+        {
+            AddAuthHeader();
+            var content = new FormUrlEncodedContent(new[]
+            {
+                new KeyValuePair<string, string>("username", username)
+            });
+            var response = await _httpClient.PostAsync($"{_baseUrl}/{id}/share", content);
+            response.EnsureSuccessStatusCode();
+        }
+
+        public async Task<List<FileMetadata>> GetSharedFilesAsync()
+        {
+            AddAuthHeader();
+            var response = await _httpClient.GetAsync($"{_baseUrl}/shared");
+            response.EnsureSuccessStatusCode();
+            var content = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<FileMetadata>>(content);
         }
 
         public async Task<bool> LoginAsync(string username, string password)

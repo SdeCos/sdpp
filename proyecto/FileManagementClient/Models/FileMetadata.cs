@@ -12,5 +12,6 @@ namespace FileManagementClient.Models
         public DateTime UploadDate { get; set; }
         public bool IsFolder { get; set; }
         public int? ParentId { get; set; }
+        public bool IsStarred { get; set; }
     }
 }

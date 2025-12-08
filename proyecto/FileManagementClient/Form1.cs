@@ -1,7 +1,9 @@
 using System;
 using System.IO;
 using System.Threading.Tasks;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 using FileManagementClient.Services;
 
 namespace FileManagementClient
@@ -22,6 +24,11 @@ namespace FileManagementClient
 
         private async void Form1_Load(object sender, EventArgs e)
         {
+            listBoxMenu.SelectedIndex = 0; // Default to All Files
+        }
+
+        private async void listBoxMenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
             await LoadFilesAsync();
         }
 
@@ -29,12 +36,52 @@ namespace FileManagementClient
         {
             try
             {
-                var files = await _apiClient.GetFilesAsync(_currentParentId);
-                dataGridViewFiles.DataSource = files;
+                int filterIndex = listBoxMenu.SelectedIndex;
+                if (filterIndex == 2) // Shared with me
+                {
+                    _currentParentId = null; // Reset navigation
+                    var files = await _apiClient.GetSharedFilesAsync();
+                    dataGridViewFiles.DataSource = files;
+                }
+                else
+                {
+                    bool starredOnly = filterIndex == 1;
+                    int? parentId = starredOnly ? null : _currentParentId;
+                    var files = await _apiClient.GetFilesAsync(parentId, starredOnly);
+                    dataGridViewFiles.DataSource = files;
+                }
+                UpdateRowColors();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error loading files: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void btnShare_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewFiles.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a file to share.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var selectedRow = dataGridViewFiles.SelectedRows[0];
+            var fileId = (int)selectedRow.Cells["Id"].Value;
+            var fileName = (string)selectedRow.Cells["FileName"].Value;
+
+            string targetUsername = Microsoft.VisualBasic.Interaction.InputBox($"Enter username to share '{fileName}' with:", "Share File", "");
+            if (!string.IsNullOrWhiteSpace(targetUsername))
+            {
+                try
+                {
+                    await _apiClient.ShareFileAsync(fileId, targetUsername);
+                    MessageBox.Show($"File '{fileName}' shared with '{targetUsername}' successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error sharing file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -228,6 +275,45 @@ namespace FileManagementClient
                 }
             }
         }
+
+        private async void btnStar_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewFiles.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a file to star/unstar.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var selectedRow = dataGridViewFiles.SelectedRows[0];
+            var fileId = (int)selectedRow.Cells["Id"].Value;
+
+            try
+            {
+                await _apiClient.ToggleFileStarAsync(fileId);
+                await LoadFilesAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error starring file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void UpdateRowColors()
+        {
+            foreach (DataGridViewRow row in dataGridViewFiles.Rows)
+            {
+                var isStarred = (bool)row.Cells["IsStarred"].Value;
+                if (isStarred)
+                {
+                    row.DefaultCellStyle.BackColor = Color.Gold;
+                }
+                else
+                {
+                    row.DefaultCellStyle.BackColor = Color.White;
+                }
+            }
+        }
+
         private void btnLogOff_Click(object sender, EventArgs e)
         {
             IsLogout = true;

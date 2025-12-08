@@ -11,5 +11,6 @@ namespace FileManagementApi.Data
 
         public DbSet<FileMetadata> Files { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<FileManagementApi.Models.FileShare> FileShares { get; set; }
     }
 }

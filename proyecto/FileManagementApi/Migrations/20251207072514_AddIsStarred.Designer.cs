@@ -3,6 +3,7 @@ using System;
 using FileManagementApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FileManagementApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251207072514_AddIsStarred")]
+    partial class AddIsStarred
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
@@ -34,9 +37,6 @@ namespace FileManagementApi.Migrations
                     b.Property<bool>("IsFolder")
                         .HasColumnType("INTEGER");
 
-                    b.Property<bool>("IsStarred")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int?>("ParentId")
                         .HasColumnType("INTEGER");
 
@@ -56,29 +56,6 @@ namespace FileManagementApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Files");
-                });
-
-            modelBuilder.Entity("FileManagementApi.Models.FileShare", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("FileId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("SharedByUserId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("SharedDate")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("SharedWithUserId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("FileShares");
                 });
 
             modelBuilder.Entity("FileManagementApi.Models.User", b =>

@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             dataGridViewFiles = new DataGridView();
+            listBoxMenu = new ListBox();
+            btnStar = new Button();
+            btnShare = new Button();
             btnUpload = new Button();
             btnDownload = new Button();
             btnRefresh = new Button();
@@ -40,20 +43,44 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewFiles).BeginInit();
             SuspendLayout();
             // 
+            // listBoxMenu
+            // 
+            this.listBoxMenu.FormattingEnabled = true;
+            this.listBoxMenu.ItemHeight = 25;
+            this.listBoxMenu.Items.AddRange(new object[] {
+            "All Files",
+            "Starred Files",
+            "Shared with me"});
+            this.listBoxMenu.Location = new System.Drawing.Point(12, 20);
+            this.listBoxMenu.Name = "listBoxMenu";
+            this.listBoxMenu.Size = new System.Drawing.Size(180, 583);
+            this.listBoxMenu.TabIndex = 9;
+            this.listBoxMenu.SelectedIndexChanged += new System.EventHandler(this.listBoxMenu_SelectedIndexChanged);
+            // 
+            // btnShare
+            // 
+            this.btnShare.Location = new System.Drawing.Point(529, 700);
+            this.btnShare.Name = "btnShare";
+            this.btnShare.Size = new System.Drawing.Size(143, 50);
+            this.btnShare.TabIndex = 10;
+            this.btnShare.Text = "Share";
+            this.btnShare.UseVisualStyleBackColor = true;
+            this.btnShare.Click += new System.EventHandler(this.btnShare_Click);
+            // 
             // dataGridViewFiles
             // 
-            dataGridViewFiles.AllowUserToAddRows = false;
-            dataGridViewFiles.AllowUserToDeleteRows = false;
-            dataGridViewFiles.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewFiles.Location = new Point(17, 20);
-            dataGridViewFiles.Margin = new Padding(4, 5, 4, 5);
-            dataGridViewFiles.Name = "dataGridViewFiles";
-            dataGridViewFiles.ReadOnly = true;
-            dataGridViewFiles.RowHeadersWidth = 62;
-            dataGridViewFiles.RowTemplate.Height = 25;
-            dataGridViewFiles.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewFiles.Size = new Size(1109, 583);
-            dataGridViewFiles.TabIndex = 0;
+            this.dataGridViewFiles.AllowUserToAddRows = false;
+            this.dataGridViewFiles.AllowUserToDeleteRows = false;
+            this.dataGridViewFiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFiles.Location = new System.Drawing.Point(200, 20);
+            this.dataGridViewFiles.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridViewFiles.Name = "dataGridViewFiles";
+            this.dataGridViewFiles.ReadOnly = true;
+            this.dataGridViewFiles.RowHeadersWidth = 62;
+            this.dataGridViewFiles.RowTemplate.Height = 25;
+            this.dataGridViewFiles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewFiles.Size = new System.Drawing.Size(920, 583);
+            this.dataGridViewFiles.TabIndex = 0;
             // 
             // btnUpload
             // 
@@ -141,13 +168,28 @@
             btnLogOff.TabIndex = 6;
             btnLogOff.Text = "Log Off";
             btnLogOff.UseVisualStyleBackColor = true;
+            btnLogOff.UseVisualStyleBackColor = true;
             btnLogOff.Click += btnLogOff_Click;
+            // 
+            // btnStar
+            // 
+            btnStar.Location = new Point(357, 700);
+            btnStar.Margin = new Padding(4, 5, 4, 5);
+            btnStar.Name = "btnStar";
+            btnStar.Size = new Size(143, 50);
+            btnStar.TabIndex = 8;
+            btnStar.Text = "Star/Unstar";
+            btnStar.UseVisualStyleBackColor = true;
+            btnStar.Click += btnStar_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1142, 771);
+            Controls.Add(listBoxMenu);
+            Controls.Add(btnStar);
+            Controls.Add(btnShare);
             Controls.Add(btnLogOff);
             Controls.Add(btnUp);
             Controls.Add(btnUploadFolder);
@@ -169,6 +211,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewFiles;
+        private System.Windows.Forms.Button btnStar;
+        private System.Windows.Forms.Button btnShare;
         private System.Windows.Forms.Button btnUpload;
         private System.Windows.Forms.Button btnDownload;
         private System.Windows.Forms.Button btnRefresh;
@@ -177,5 +221,6 @@
         private System.Windows.Forms.Button btnUp;
         private System.Windows.Forms.Button btnUploadFolder;
         private System.Windows.Forms.Button btnLogOff;
+        private System.Windows.Forms.ListBox listBoxMenu;
     }
 }

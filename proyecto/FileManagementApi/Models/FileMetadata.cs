@@ -23,6 +23,8 @@ namespace FileManagementApi.Models
 
         public int? ParentId { get; set; }
 
+        public bool IsStarred { get; set; }
+
         public int UserId { get; set; }
     }
 }
