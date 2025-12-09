@@ -2,6 +2,7 @@ using System;
 
 namespace FileManagementApi.Models
 {
+    /// Representa un registro de archivo compartido entre usuarios.
     public class FileShare
     {
         public int Id { get; set; }

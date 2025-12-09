@@ -3,6 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FileManagementApi.Models
 {
+    /// Representa los metadatos de un archivo o carpeta almacenado en el servidor.
+    /// Esta entidad se mapea a la base de datos.
     public class FileMetadata
     {
         public int Id { get; set; }

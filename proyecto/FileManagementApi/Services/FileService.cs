@@ -7,7 +7,8 @@ using System.IO.Compression;
 namespace FileManagementApi.Services
 {
 
-
+    /// Implementación del servicio de gestión de archivos.
+    /// Maneja la lógica de almacenamiento físico y metadatos en BD.
     public class FileService : IFileService
     {
         private readonly AppDbContext _context;
@@ -25,6 +26,12 @@ namespace FileManagementApi.Services
 
         public async Task<FileMetadata> UploadFileAsync(IFormFile file, int? parentId, int userId)
         {
+            // Verify access to parent folder if it exists
+            if (parentId.HasValue && !await HasAccessAsync(parentId.Value, userId))
+            {
+                 throw new UnauthorizedAccessException("Cannot upload to this folder.");
+            }
+
             var storedFileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
             var filePath = Path.Combine(_storagePath, storedFileName);
 
@@ -53,7 +60,13 @@ namespace FileManagementApi.Services
 
         public async Task<(Stream?, FileMetadata?)> DownloadFileAsync(int id, int userId)
         {
-            var metadata = await _context.Files.FirstOrDefaultAsync(f => f.Id == id && f.UserId == userId);
+            // Updated to use HasAccessAsync
+            if (!await HasAccessAsync(id, userId))
+            {
+                return (null, null);
+            }
+
+            var metadata = await _context.Files.FirstOrDefaultAsync(f => f.Id == id);
             if (metadata == null)
             {
                 return (null, null);
@@ -71,18 +84,31 @@ namespace FileManagementApi.Services
 
         public async Task<IEnumerable<FileMetadata>> ListFilesAsync(int? parentId, int userId, bool starredOnly = false)
         {
-            var query = _context.Files.Where(f => f.UserId == userId);
-
             if (starredOnly)
             {
-                query = query.Where(f => f.IsStarred);
-            }
-            else
-            {
-                query = query.Where(f => f.ParentId == parentId);
+                return await _context.Files
+                    .Where(f => f.UserId == userId && f.IsStarred)
+                    .ToListAsync();
             }
 
-            return await query.ToListAsync();
+            if (parentId == null)
+            {
+                // Root: only show files owned by the user
+                return await _context.Files
+                    .Where(f => f.UserId == userId && f.ParentId == null)
+                    .ToListAsync();
+            }
+
+            // Check if user has access to this folder (owned or shared)
+            if (await HasAccessAsync(parentId.Value, userId))
+            {
+                // Return all files in the folder regardless of owner
+                return await _context.Files
+                    .Where(f => f.ParentId == parentId)
+                    .ToListAsync();
+            }
+
+            return new List<FileMetadata>();
         }
 
         public async Task<bool> DeleteFileAsync(int id, int userId)
@@ -107,6 +133,12 @@ namespace FileManagementApi.Services
 
         public async Task<FileMetadata> CreateFolderAsync(string name, int? parentId, int userId)
         {
+             // Check access to parent if exists
+            if (parentId.HasValue && !await HasAccessAsync(parentId.Value, userId))
+            {
+                throw new UnauthorizedAccessException("Cannot create folder here.");
+            }
+
             var metadata = new FileMetadata
             {
                 FileName = name,
@@ -127,7 +159,12 @@ namespace FileManagementApi.Services
 
         public async Task<(Stream, string)> DownloadFolderAsZipAsync(int folderId, int userId)
         {
-            var folder = await _context.Files.FirstOrDefaultAsync(f => f.Id == folderId && f.UserId == userId);
+            if (!await HasAccessAsync(folderId, userId))
+            {
+                throw new ArgumentException("Folder not found or access denied.");
+            }
+
+            var folder = await _context.Files.FirstOrDefaultAsync(f => f.Id == folderId);
             if (folder == null || !folder.IsFolder)
             {
                 throw new ArgumentException("Folder not found or invalid.");
@@ -145,7 +182,7 @@ namespace FileManagementApi.Services
 
         private async Task AddFolderToZipAsync(System.IO.Compression.ZipArchive archive, int folderId, string relativePath, int userId)
         {
-            var files = await _context.Files.Where(f => f.ParentId == folderId && f.UserId == userId).ToListAsync();
+            var files = await _context.Files.Where(f => f.ParentId == folderId).ToListAsync();
 
             foreach (var file in files)
             {
@@ -224,6 +261,32 @@ namespace FileManagementApi.Services
             return await _context.Files
                 .Where(f => sharedWithMe.Contains(f.Id))
                 .ToListAsync();
+        }
+
+        private async Task<bool> HasAccessAsync(int itemId, int userId)
+        {
+            int? currentId = itemId;
+            while (currentId.HasValue)
+            {
+                var file = await _context.Files
+                    .Where(f => f.Id == currentId.Value)
+                    .Select(f => new { f.UserId, f.ParentId })
+                    .FirstOrDefaultAsync();
+
+                if (file == null) return false;
+
+                if (file.UserId == userId) return true; // Owned by user
+
+                // Shared with user
+                var isShared = await _context.FileShares
+                    .AnyAsync(fs => fs.FileId == currentId.Value && fs.SharedWithUserId == userId);
+
+                if (isShared) return true;
+
+                currentId = file.ParentId;
+            }
+
+            return false;
         }
     }
 }

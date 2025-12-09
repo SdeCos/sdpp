@@ -2,6 +2,7 @@ using System;
 
 namespace FileManagementClient.Models
 {
+    /// Representa los metadatos de un archivo o carpeta en el cliente.
     public class FileMetadata
     {
         public int Id { get; set; }

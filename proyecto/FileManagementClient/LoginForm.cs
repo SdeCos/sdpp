@@ -4,6 +4,7 @@ using FileManagementClient.Services;
 
 namespace FileManagementClient
 {
+    /// Formulario de inicio de sesión y registro de usuarios.
     public partial class LoginForm : Form
     {
         private readonly ApiClient _apiClient;
@@ -22,87 +23,95 @@ namespace FileManagementClient
 
         private void InitializeComponent()
         {
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
+            btnLogin = new Button();
+            btnRegister = new Button();
+            lblUsername = new Label();
+            lblPassword = new Label();
+            SuspendLayout();
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(100, 30);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(200, 23);
-            this.txtUsername.TabIndex = 0;
+            txtUsername.Location = new Point(143, 50);
+            txtUsername.Margin = new Padding(4, 5, 4, 5);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(284, 31);
+            txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(100, 70);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(200, 23);
-            this.txtPassword.TabIndex = 1;
+            txtPassword.Location = new Point(143, 117);
+            txtPassword.Margin = new Padding(4, 5, 4, 5);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new Size(284, 31);
+            txtPassword.TabIndex = 1;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(100, 110);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(90, 30);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            btnLogin.Location = new Point(143, 183);
+            btnLogin.Margin = new Padding(4, 5, 4, 5);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(129, 50);
+            btnLogin.TabIndex = 2;
+            btnLogin.Text = "Iniciar Sesión";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(210, 110);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(90, 30);
-            this.btnRegister.TabIndex = 3;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            btnRegister.Location = new Point(300, 183);
+            btnRegister.Margin = new Padding(4, 5, 4, 5);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(129, 50);
+            btnRegister.TabIndex = 3;
+            btnRegister.Text = "Registrar";
+            btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.Click += btnRegister_Click;
             // 
             // lblUsername
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(20, 33);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(63, 15);
-            this.lblUsername.TabIndex = 4;
-            this.lblUsername.Text = "Username:";
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(29, 55);
+            lblUsername.Margin = new Padding(4, 0, 4, 0);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(76, 25);
+            lblUsername.TabIndex = 4;
+            lblUsername.Text = "Usuario:";
             // 
             // lblPassword
             // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(20, 73);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(60, 15);
-            this.lblPassword.TabIndex = 5;
-            this.lblPassword.Text = "Password:";
+            lblPassword.AutoSize = true;
+            lblPassword.Location = new Point(29, 122);
+            lblPassword.Margin = new Padding(4, 0, 4, 0);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(105, 25);
+            lblPassword.TabIndex = 5;
+            lblPassword.Text = "Contraseña:";
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 180);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.Name = "LoginForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(500, 300);
+            Controls.Add(lblPassword);
+            Controls.Add(lblUsername);
+            Controls.Add(btnRegister);
+            Controls.Add(btnLogin);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(4, 5, 4, 5);
+            MaximizeBox = false;
+            Name = "LoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Inicio de sesión";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
+        /// Intenta autenticar al usuario con las credenciales proporcionadas.
         private async void btnLogin_Click(object sender, EventArgs e)
         {
             var username = txtUsername.Text;
@@ -151,6 +160,7 @@ namespace FileManagementClient
             }
         }
 
+        /// Crea un nuevo usuario en el sistema.
         private async void btnRegister_Click(object sender, EventArgs e)
         {
             var username = txtUsername.Text;

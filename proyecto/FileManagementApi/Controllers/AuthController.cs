@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FileManagementApi.Controllers
 {
+    /// Controlador para la gestión de autenticación de usuarios.
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -14,6 +15,7 @@ namespace FileManagementApi.Controllers
             _authService = authService;
         }
 
+        /// Registra un nuevo usuario en el sistema.
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromForm] string username, [FromForm] string password)
         {
@@ -31,6 +33,7 @@ namespace FileManagementApi.Controllers
             return Ok(new { user.Id, user.Username });
         }
 
+        /// Inicia sesión y devuelve la información del usuario.
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromForm] string username, [FromForm] string password)
         {

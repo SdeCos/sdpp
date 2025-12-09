@@ -6,12 +6,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FileManagementApi.Services
 {
+
+    /// Interfaz para el servicio de autenticación.
     public interface IAuthService
     {
+
+        /// Registra un nuevo usuario.
         Task<User?> RegisterAsync(string username, string password);
+        
+        /// Valida credenciales de usuario.
         Task<User?> LoginAsync(string username, string password);
     }
 
+    /// Implementación del servicio de autenticación.
     public class AuthService : IAuthService
     {
         private readonly AppDbContext _context;
@@ -25,7 +32,7 @@ namespace FileManagementApi.Services
         {
             if (await _context.Users.AnyAsync(u => u.Username == username))
             {
-                return null; // User already exists
+                return null;
             }
 
             var user = new User
@@ -55,6 +62,7 @@ namespace FileManagementApi.Services
             return user;
         }
 
+        /// Genera un hash SHA256 de la contraseña.
         private string HashPassword(string password)
         {
             using (var sha256 = SHA256.Create())

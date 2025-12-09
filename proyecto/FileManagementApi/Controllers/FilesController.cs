@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FileManagementApi.Controllers
 {
+    /// API REST para la gestión de archivos y carpetas.
+    /// Requiere cabecera X-User-Id para identificar al usuario.
     [Route("api/[controller]")]
     [ApiController]
     public class FilesController : ControllerBase
@@ -24,6 +26,7 @@ namespace FileManagementApi.Controllers
             throw new UnauthorizedAccessException("User ID not found in headers.");
         }
 
+        /// Sube un archivo al servidor.
         [HttpPost("upload")]
         public async Task<IActionResult> Upload(IFormFile file, [FromForm] int? parentId)
         {
@@ -48,6 +51,7 @@ namespace FileManagementApi.Controllers
             }
         }
 
+        /// Crea una nueva carpeta.
         [HttpPost("folder")]
         public async Task<IActionResult> CreateFolder([FromForm] string name, [FromForm] int? parentId)
         {
@@ -72,6 +76,7 @@ namespace FileManagementApi.Controllers
             }
         }
 
+        /// Descarga un archivo individual.
         [HttpGet("{id}")]
         public async Task<IActionResult> Download(int id)
         {
@@ -102,6 +107,7 @@ namespace FileManagementApi.Controllers
             }
         }
 
+        /// Descarga una carpeta como archivo ZIP.
         [HttpGet("folder/{id}/download")]
         public async Task<IActionResult> DownloadFolder(int id)
         {
@@ -121,6 +127,7 @@ namespace FileManagementApi.Controllers
             }
         }
 
+        /// Lista archivos y carpetas, con opción de filtrado.
         [HttpGet]
         public async Task<IActionResult> List([FromQuery] int? parentId, [FromQuery] bool starredOnly = false)
         {
@@ -140,6 +147,7 @@ namespace FileManagementApi.Controllers
             }
         }
 
+        /// Elimina un archivo o carpeta.
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -163,6 +171,7 @@ namespace FileManagementApi.Controllers
             }
         }
 
+        /// Alterna el estado de "destacado" de un archivo.
         [HttpPost("{id}/star")]
         public async Task<IActionResult> ToggleStar(int id)
         {
@@ -181,13 +190,13 @@ namespace FileManagementApi.Controllers
             }
         }
 
+        /// Comparte un archivo con otro usuario.
         [HttpPost("{id}/share")]
         public async Task<IActionResult> ShareFile(int id, [FromForm] string username)
         {
             try
             {
                 var userId = GetUserId();
-                 // if username is empty check query or body? usually FromForm is fine for post
                 if(string.IsNullOrWhiteSpace(username)) return BadRequest("Username is required");
 
                 var result = await _fileService.ShareFileAsync(id, username, userId);
@@ -203,6 +212,7 @@ namespace FileManagementApi.Controllers
             }
         }
 
+        /// Obtiene los archivos compartidos con el usuario actual.
         [HttpGet("shared")]
         public async Task<IActionResult> GetSharedFiles()
         {

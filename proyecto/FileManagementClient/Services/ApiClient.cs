@@ -9,6 +9,8 @@ using Newtonsoft.Json;
 
 namespace FileManagementClient.Services
 {
+    /// Cliente HTTP para comunicarse con la API de gestión de archivos.
+    /// Maneja la autenticación y todas las peticiones al servidor.
     public class ApiClient
     {
         private readonly HttpClient _httpClient;
@@ -32,6 +34,7 @@ namespace FileManagementClient.Services
             }
         }
 
+        /// Obtiene la lista de archivos y carpetas.
         public async Task<List<FileMetadata>> GetFilesAsync(int? parentId = null, bool starredOnly = false)
         {
             AddAuthHeader();
@@ -59,6 +62,7 @@ namespace FileManagementClient.Services
             return JsonConvert.DeserializeObject<List<FileMetadata>>(content);
         }
 
+        /// Sube un archivo al servidor.
         public async Task<FileMetadata> UploadFileAsync(string filePath, int? parentId = null)
         {
             AddAuthHeader();
@@ -80,6 +84,7 @@ namespace FileManagementClient.Services
             }
         }
 
+        /// Crea una nueva carpeta en el servidor.
         public async Task<FileMetadata> CreateFolderAsync(string name, int? parentId = null)
         {
             AddAuthHeader();
@@ -98,6 +103,7 @@ namespace FileManagementClient.Services
             }
         }
 
+        /// Descarga un archivo por su ID.
         public async Task<Stream> DownloadFileAsync(int id)
         {
             AddAuthHeader();
@@ -106,6 +112,7 @@ namespace FileManagementClient.Services
             return await response.Content.ReadAsStreamAsync();
         }
 
+        /// Descarga una carpeta completa comprimida en ZIP.
         public async Task<Stream> DownloadFolderAsZipAsync(int folderId)
         {
             AddAuthHeader();
@@ -114,12 +121,14 @@ namespace FileManagementClient.Services
             return await response.Content.ReadAsStreamAsync();
         }
 
+        /// Alterna el estado de destacado de un archivo.
         public async Task ToggleFileStarAsync(int id)
         {
             var response = await _httpClient.PostAsync($"{_baseUrl}/{id}/star", null);
             response.EnsureSuccessStatusCode();
         }
 
+        /// Elimina un archivo o carpeta.
         public async Task DeleteFileAsync(int id)
         {
             AddAuthHeader();
@@ -127,6 +136,7 @@ namespace FileManagementClient.Services
             response.EnsureSuccessStatusCode();
         }
 
+        /// Comparte un archivo con otro usuario.
         public async Task ShareFileAsync(int id, string username)
         {
             AddAuthHeader();
@@ -138,6 +148,7 @@ namespace FileManagementClient.Services
             response.EnsureSuccessStatusCode();
         }
 
+        /// Obtiene los archivos que han sido compartidos con el usuario actual.
         public async Task<List<FileMetadata>> GetSharedFilesAsync()
         {
             AddAuthHeader();
@@ -147,6 +158,7 @@ namespace FileManagementClient.Services
             return JsonConvert.DeserializeObject<List<FileMetadata>>(content);
         }
 
+        /// Inicia sesión en el sistema.
         public async Task<bool> LoginAsync(string username, string password)
         {
             var content = new FormUrlEncodedContent(new[]
@@ -166,7 +178,7 @@ namespace FileManagementClient.Services
             return false;
         }
 
-
+        /// Registra un nuevo usuario en el sistema.
         public async Task<bool> RegisterAsync(string username, string password)
         {
             var content = new FormUrlEncodedContent(new[]

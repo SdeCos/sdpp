@@ -1,5 +1,6 @@
 namespace FileManagementApi.Models
 {
+    /// Representa un usuario registrado en el sistema.
     public class User
     {
         public int Id { get; set; }

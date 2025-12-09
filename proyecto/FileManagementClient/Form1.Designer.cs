@@ -43,44 +43,51 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewFiles).BeginInit();
             SuspendLayout();
             // 
+            // dataGridViewFiles
+            // 
+            dataGridViewFiles.AllowUserToAddRows = false;
+            dataGridViewFiles.AllowUserToDeleteRows = false;
+            dataGridViewFiles.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewFiles.Location = new Point(213, 20);
+            dataGridViewFiles.Margin = new Padding(4, 5, 4, 5);
+            dataGridViewFiles.Name = "dataGridViewFiles";
+            dataGridViewFiles.ReadOnly = true;
+            dataGridViewFiles.RowHeadersWidth = 62;
+            dataGridViewFiles.RowTemplate.Height = 25;
+            dataGridViewFiles.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewFiles.Size = new Size(907, 583);
+            dataGridViewFiles.TabIndex = 0;
+            // 
             // listBoxMenu
             // 
-            this.listBoxMenu.FormattingEnabled = true;
-            this.listBoxMenu.ItemHeight = 25;
-            this.listBoxMenu.Items.AddRange(new object[] {
-            "All Files",
-            "Starred Files",
-            "Shared with me"});
-            this.listBoxMenu.Location = new System.Drawing.Point(12, 20);
-            this.listBoxMenu.Name = "listBoxMenu";
-            this.listBoxMenu.Size = new System.Drawing.Size(180, 583);
-            this.listBoxMenu.TabIndex = 9;
-            this.listBoxMenu.SelectedIndexChanged += new System.EventHandler(this.listBoxMenu_SelectedIndexChanged);
+            listBoxMenu.FormattingEnabled = true;
+            listBoxMenu.Items.AddRange(new object[] { "Todos los archivos", "Archivos destacados", "Compartido conmigo" });
+            listBoxMenu.Location = new Point(12, 20);
+            listBoxMenu.Name = "listBoxMenu";
+            listBoxMenu.Size = new Size(194, 579);
+            listBoxMenu.TabIndex = 9;
+            listBoxMenu.SelectedIndexChanged += listBoxMenu_SelectedIndexChanged;
+            // 
+            // btnStar
+            // 
+            btnStar.Location = new Point(186, 700);
+            btnStar.Margin = new Padding(4, 5, 4, 5);
+            btnStar.Name = "btnStar";
+            btnStar.Size = new Size(143, 50);
+            btnStar.TabIndex = 8;
+            btnStar.Text = "Destacar";
+            btnStar.UseVisualStyleBackColor = true;
+            btnStar.Click += btnStar_Click;
             // 
             // btnShare
             // 
-            this.btnShare.Location = new System.Drawing.Point(529, 700);
-            this.btnShare.Name = "btnShare";
-            this.btnShare.Size = new System.Drawing.Size(143, 50);
-            this.btnShare.TabIndex = 10;
-            this.btnShare.Text = "Share";
-            this.btnShare.UseVisualStyleBackColor = true;
-            this.btnShare.Click += new System.EventHandler(this.btnShare_Click);
-            // 
-            // dataGridViewFiles
-            // 
-            this.dataGridViewFiles.AllowUserToAddRows = false;
-            this.dataGridViewFiles.AllowUserToDeleteRows = false;
-            this.dataGridViewFiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFiles.Location = new System.Drawing.Point(200, 20);
-            this.dataGridViewFiles.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridViewFiles.Name = "dataGridViewFiles";
-            this.dataGridViewFiles.ReadOnly = true;
-            this.dataGridViewFiles.RowHeadersWidth = 62;
-            this.dataGridViewFiles.RowTemplate.Height = 25;
-            this.dataGridViewFiles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewFiles.Size = new System.Drawing.Size(920, 583);
-            this.dataGridViewFiles.TabIndex = 0;
+            btnShare.Location = new Point(357, 700);
+            btnShare.Name = "btnShare";
+            btnShare.Size = new Size(143, 50);
+            btnShare.TabIndex = 10;
+            btnShare.Text = "Compartir";
+            btnShare.UseVisualStyleBackColor = true;
+            btnShare.Click += btnShare_Click;
             // 
             // btnUpload
             // 
@@ -89,7 +96,7 @@
             btnUpload.Name = "btnUpload";
             btnUpload.Size = new Size(143, 50);
             btnUpload.TabIndex = 1;
-            btnUpload.Text = "Upload";
+            btnUpload.Text = "Subir Archivo";
             btnUpload.UseVisualStyleBackColor = true;
             btnUpload.Click += btnUpload_Click;
             // 
@@ -100,7 +107,7 @@
             btnDownload.Name = "btnDownload";
             btnDownload.Size = new Size(143, 50);
             btnDownload.TabIndex = 2;
-            btnDownload.Text = "Download";
+            btnDownload.Text = "Descargar";
             btnDownload.UseVisualStyleBackColor = true;
             btnDownload.Click += btnDownload_Click;
             // 
@@ -111,7 +118,7 @@
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(143, 50);
             btnRefresh.TabIndex = 3;
-            btnRefresh.Text = "Refresh";
+            btnRefresh.Text = "Actualizar";
             btnRefresh.UseVisualStyleBackColor = true;
             btnRefresh.Click += btnRefresh_Click;
             // 
@@ -122,7 +129,7 @@
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(143, 50);
             btnDelete.TabIndex = 4;
-            btnDelete.Text = "Delete";
+            btnDelete.Text = "Borrar";
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
             // 
@@ -133,7 +140,7 @@
             btnNewFolder.Name = "btnNewFolder";
             btnNewFolder.Size = new Size(143, 50);
             btnNewFolder.TabIndex = 5;
-            btnNewFolder.Text = "New Folder";
+            btnNewFolder.Text = "Crear Carpeta";
             btnNewFolder.UseVisualStyleBackColor = true;
             btnNewFolder.Click += btnNewFolder_Click;
             // 
@@ -144,7 +151,7 @@
             btnUp.Name = "btnUp";
             btnUp.Size = new Size(143, 50);
             btnUp.TabIndex = 6;
-            btnUp.Text = "Up";
+            btnUp.Text = "Atrás";
             btnUp.UseVisualStyleBackColor = true;
             btnUp.Click += btnUp_Click;
             // 
@@ -155,32 +162,20 @@
             btnUploadFolder.Name = "btnUploadFolder";
             btnUploadFolder.Size = new Size(143, 50);
             btnUploadFolder.TabIndex = 7;
-            btnUploadFolder.Text = "Upload Folder";
+            btnUploadFolder.Text = "Subir Carpeta";
             btnUploadFolder.UseVisualStyleBackColor = true;
             btnUploadFolder.Click += btnUploadFolder_Click;
             // 
             // btnLogOff
             // 
-            btnLogOff.Location = new Point(186, 700);
+            btnLogOff.Location = new Point(871, 707);
             btnLogOff.Margin = new Padding(4, 5, 4, 5);
             btnLogOff.Name = "btnLogOff";
             btnLogOff.Size = new Size(143, 50);
             btnLogOff.TabIndex = 6;
             btnLogOff.Text = "Log Off";
             btnLogOff.UseVisualStyleBackColor = true;
-            btnLogOff.UseVisualStyleBackColor = true;
             btnLogOff.Click += btnLogOff_Click;
-            // 
-            // btnStar
-            // 
-            btnStar.Location = new Point(357, 700);
-            btnStar.Margin = new Padding(4, 5, 4, 5);
-            btnStar.Name = "btnStar";
-            btnStar.Size = new Size(143, 50);
-            btnStar.TabIndex = 8;
-            btnStar.Text = "Star/Unstar";
-            btnStar.UseVisualStyleBackColor = true;
-            btnStar.Click += btnStar_Click;
             // 
             // Form1
             // 
@@ -201,7 +196,7 @@
             Controls.Add(dataGridViewFiles);
             Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
-            Text = "File Manager";
+            Text = "Gestor de Archivos";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewFiles).EndInit();
             ResumeLayout(false);
